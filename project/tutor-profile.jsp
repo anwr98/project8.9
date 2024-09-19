@@ -154,21 +154,7 @@
             </form>
         </div>
     </main>
-
-    <div style="text-align: center; margin-top: 20px;">
-        <%
-            // Retrieve the referer (previous page) from the HTTP header
-            String referer = request.getHeader("referer");
-        %>
-        <% if (referer != null) { %>
-            <a href="<%= referer %>">
-                <button class="back-button">Back</button>
-            </a>
-        <% } else { %>
-            <button class="back-button" onclick="history.back()">Back</button>
-        <% } %>
-    </div>
-    
+ 
     <footer>
         <div class="footer-content">
             <p>Follow us:</p>
